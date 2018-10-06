@@ -10,7 +10,4 @@ Check redi is runing using ping command and get result pong.
 
 Redis Command using in c#
 
-SetData
-GetData
-KeyExists
-KeyDelete
+SetData, GetData, KeyExists, KeyDelete
