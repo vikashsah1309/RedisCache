@@ -1,0 +1,12 @@
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\RedisCache.exe.config
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\RedisCache.exe
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\RedisCache.pdb
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\protobuf-net.dll
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\StackExchange.Redis.Extensions.Core.dll
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\StackExchange.Redis.Extensions.Protobuf.dll
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\StackExchange.Redis.StrongName.dll
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\obj\Debug\RedisCache.exe
+C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\obj\Debug\RedisCache.pdb
+C:\Users\vks\documents\visual studio 2015\Projects\AngularJS\RedisCache\obj\Debug\RedisCache.csprojResolveAssemblyReference.cache
