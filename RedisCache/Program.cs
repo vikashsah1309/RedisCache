@@ -1,29 +1,30 @@
 ﻿using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
+using System.Configuration;
 using System.Web.Script.Serialization;
 
 namespace RedisCache
 {
     class Program
     {
+        public static string RedisConnetion = ConfigurationManager.AppSettings["RedisCache"];
+        public static string key = "Name";
+        public static string value = "Hello World";
         public static void Main(string[] args)
         {
-            if (!IsKeyExits("Name"))
+            if (!IsKeyExits(key))
             {
-                SetData("Name", "Vikash Kumar");
+                SetData(key, value);
             }
-
-            
-            string getdata = GetData<string>("Name");
-            AppendData("Name", "Sah");
+            string getdata = GetData<string>(key);
             Console.WriteLine(getdata);
-            Console.WriteLine(IsKeyDelete("Name"));
+            Console.WriteLine(IsKeyDelete(key));
             Console.ReadLine();
         }
         public static void SetData<T>(string key, T data)
         {
-            using (var redis = ConnectionMultiplexer.Connect("localhost:6379,password=vpvsedyrs"))
+            using (var redis = ConnectionMultiplexer.Connect(RedisConnetion))
             {
                 IDatabase db = redis.GetDatabase();
                 JavaScriptSerializer json_serializer = new JavaScriptSerializer();
@@ -34,21 +35,10 @@ namespace RedisCache
                 redis.Close();
             }
         }
-        public static void AppendData<T>(string key, T data)
-        {
-            using (var redis = ConnectionMultiplexer.Connect("localhost:6379,password=vpvsedyrs"))
-            {
-                IDatabase db = redis.GetDatabase();
-                JavaScriptSerializer json_serializer = new JavaScriptSerializer();
-                json_serializer.MaxJsonLength = int.MaxValue;
-                db.StringAppend(key, json_serializer.Serialize(data));
 
-                redis.Close();
-            }
-        }
         public static T GetData<T>(string key)
         {
-            using (var redis = ConnectionMultiplexer.Connect("localhost:6379,password=vpvsedyrs"))
+            using (var redis = ConnectionMultiplexer.Connect(RedisConnetion))
             {
                 try
                 {
@@ -71,7 +61,7 @@ namespace RedisCache
         public static bool IsKeyExits(string key)
         {
             bool Isexits = false;
-            using (var redis = ConnectionMultiplexer.Connect("localhost:6379,password=vpvsedyrs"))
+            using (var redis = ConnectionMultiplexer.Connect(RedisConnetion))
             {
                 IDatabase db = redis.GetDatabase();
 
@@ -83,7 +73,7 @@ namespace RedisCache
         public static bool IsKeyDelete(string key)
         {
             bool Isexits = false;
-            using (var redis = ConnectionMultiplexer.Connect("localhost:6379,password=vpvsedyrs"))
+            using (var redis = ConnectionMultiplexer.Connect(RedisConnetion))
             {
                 IDatabase db = redis.GetDatabase();
                 Isexits = db.KeyDelete(key);
@@ -93,7 +83,4 @@ namespace RedisCache
             return Isexits;
         }
     }
-
-
-
 }

@@ -10,3 +10,15 @@ C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\bin\Debu
 C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\obj\Debug\RedisCache.exe
 C:\Users\vks\Documents\Visual Studio 2015\Projects\AngularJS\RedisCache\obj\Debug\RedisCache.pdb
 C:\Users\vks\documents\visual studio 2015\Projects\AngularJS\RedisCache\obj\Debug\RedisCache.csprojResolveAssemblyReference.cache
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\RedisCache.exe.config
+D:\GitHub Repo\RedisCache\RedisCache\obj\Debug\RedisCache.exe
+D:\GitHub Repo\RedisCache\RedisCache\obj\Debug\RedisCache.pdb
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\RedisCache.exe
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\RedisCache.pdb
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\protobuf-net.dll
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\StackExchange.Redis.Extensions.Core.dll
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\StackExchange.Redis.Extensions.Protobuf.dll
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\StackExchange.Redis.StrongName.dll
+D:\GitHub Repo\RedisCache\RedisCache\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub Repo\RedisCache\RedisCache\obj\Debug\RedisCache.csprojResolveAssemblyReference.cache
