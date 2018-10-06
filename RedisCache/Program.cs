@@ -22,6 +22,7 @@ namespace RedisCache
             Console.WriteLine(IsKeyDelete(key));
             Console.ReadLine();
         }
+
         public static void SetData<T>(string key, T data)
         {
             using (var redis = ConnectionMultiplexer.Connect(RedisConnetion))
@@ -35,7 +36,6 @@ namespace RedisCache
                 redis.Close();
             }
         }
-
         public static T GetData<T>(string key)
         {
             using (var redis = ConnectionMultiplexer.Connect(RedisConnetion))
