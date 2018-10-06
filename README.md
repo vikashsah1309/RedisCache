@@ -1,0 +1,2 @@
+# RedisCache
+RedisCache Console Application
