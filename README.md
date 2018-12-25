@@ -11,8 +11,13 @@ Check redi is runing using ping command and get result pong.
 Redis Command using in c#
 
 GET key: This key gets the value O(1)
+
 SET key “value”: This key sets a value for a key O(1)
+
 SETNX key “value”: If key does Not eXist this will sets a value against it O(1)
+
 GETSET key “value”: Get the old value and sets a new value O(1)
+
 KeyExists key: Check key exists or not.
+
 KeyDelete key : exist key delete from redis.
